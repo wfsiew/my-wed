@@ -10,10 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {
-    path: '', redirectTo: '/home', pathMatch: 'full'
-  },
-  {
-    path: 'home', component: HomeComponent
+    path: '', component: HomeComponent
   },
   {
     path: 'photo/:id', component: PhotoComponent

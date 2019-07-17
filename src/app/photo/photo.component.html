@@ -17,10 +17,10 @@
   </div>
 </div> -->
 
-<div class="row">
+<div class="row mt-2">
   <div class="col-md-12">
     <div class="text-center">
-      <ngb-carousel [activeId]="activeId" class="caro"
+      <ngb-carousel [activeId]="activeId" 
         [showNavigationArrows]="showNavigationArrows" 
         [showNavigationIndicators]="showNavigationIndicators">
         <ng-template ngbSlide *ngFor="let image of AppConstant.IMG_LIST; index as i" [id]="image.toString()">
