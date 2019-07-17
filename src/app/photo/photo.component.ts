@@ -32,7 +32,7 @@ export class PhotoComponent implements OnInit {
   }
 
   setCurrentImage(image) {
-    this.currentImage = `assets/src-photo/MC3_${image}.jpg`;
+    this.currentImage = `assets/resized-photo/MC3_${image}.jpg`;
   }
 
   onSwipeLeft(e) {

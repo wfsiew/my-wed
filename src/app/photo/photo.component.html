@@ -1,14 +1,18 @@
-<div>
-  <img [src]="currentImage" class="img-fluid"
-    (swipeleft)="onSwipeLeft($event)"
-    (swiperight)="onSwipeRight($event)" />
+<div class="row">
+  <div class="col-md-12">
+    <div class="text-center">
+      <img [src]="currentImage" class="img-card" (swipeleft)="onSwipeLeft($event)"
+        (swiperight)="onSwipeRight($event)" />
+    </div>
+  </div>
 </div>
 <div class="row mt-2">
   <div class="col-md-12">
     <div class="text-center">
       <button class="btn btn-primary mr-2" (click)="back()">Back</button>
       <button class="btn btn-primary mr-2" (click)="prev()" [disabled]="currentIndex === 0">Previous</button>
-      <button class="btn btn-primary" (click)="next()" [disabled]="currentIndex === AppConstant.IMG_LIST.length - 1">Next</button>
+      <button class="btn btn-primary" (click)="next()"
+        [disabled]="currentIndex === AppConstant.IMG_LIST.length - 1">Next</button>
     </div>
   </div>
 </div>
