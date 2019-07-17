@@ -20,8 +20,4 @@ export class HomeComponent implements OnInit {
   getImage(image: number) {
     return `assets/dest-photo/MC3_${image}.jpg`;
   }
-
-  show(id) {
-    this.router.navigate(['/photo', id]);
-  }
 }

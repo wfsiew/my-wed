@@ -1,5 +1,7 @@
 <div class="d-flex flex-wrap">
   <div *ngFor="let image of AppConstant.IMG_LIST; index as i" class="d-inline">
-    <img [src]="getImage(image)" class="img-thumbnail img-tb m-1" (click)="show(i)" />
+    <a [routerLink]="['/photo', image]">
+      <img [src]="getImage(image)" class="img-thumbnail img-tb m-1" />
+    </a>
   </div>
 </div>
