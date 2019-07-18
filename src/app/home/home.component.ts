@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { AppConstant } from '../constants/index';
 
 @Component({
@@ -11,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   readonly AppConstant = AppConstant;
 
-  constructor(private router: Router) { 
+  constructor() { 
   }
 
   ngOnInit() {
