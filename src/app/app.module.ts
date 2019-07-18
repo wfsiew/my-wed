@@ -27,7 +27,7 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, { onSameUrlNavigation: 'reload' })
   ],
   providers: [],
   bootstrap: [AppComponent]
