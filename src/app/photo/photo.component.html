@@ -1,11 +1,11 @@
-<div class="row mt-2">
+<div class="row mt-2 container-fluid">
   <div class="col-md-12">
     <div class="text-center">
       <ngb-carousel [activeId]="activeId" 
         [showNavigationArrows]="showNavigationArrows" 
         [showNavigationIndicators]="showNavigationIndicators">
         <ng-template ngbSlide *ngFor="let image of AppConstant.IMG_LIST" [id]="image.toString()">
-          <img [src]="getImage(image)" alt="Loading ..." class="img-card" />
+          <img [src]="getImage(image)" alt="Loading ..." class="img-fluid" />
         </ng-template>
       </ngb-carousel>
     </div>
