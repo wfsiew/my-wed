@@ -1,6 +1,8 @@
 <div class="mt-2 container">
   <div class="text-center">
-    <ngb-carousel [activeId]="activeId" [interval]="false"
+    <ngb-carousel 
+      [activeId]="activeId" 
+      [interval]="false"
       [showNavigationArrows]="showNavigationArrows" 
       [showNavigationIndicators]="showNavigationIndicators">
       <ng-template ngbSlide *ngFor="let image of AppConstant.IMG_LIST" [id]="image.toString()">
