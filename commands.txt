@@ -1,1 +1,3 @@
 ng build --prod --base-href https://wfsiew.github.io/my-wed/ --output-path docs
+
+https://shermandigital.com/blog/fix-404-errors-from-angular-projects-hosted-on-github-pages/
