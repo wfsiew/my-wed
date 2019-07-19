@@ -27,6 +27,7 @@
     })();
 
     window.addEventListener('popstate', function (event) {
+      alert('back')
       delete sessionStorage.redirect;
     }, false);
   </script>
