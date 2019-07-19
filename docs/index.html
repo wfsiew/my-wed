@@ -17,6 +17,7 @@
       alert('index-' + redirect)
       // Remove the URL from sessionStorage.
       delete sessionStorage.redirect;
+      alert('redirect-' + redirect + ', location.href-' + location.href)
       // Check if we actually need to redirect.
       if (redirect && redirect != location.href) {
         // We need to redirect to the URL the user was trying to access.
