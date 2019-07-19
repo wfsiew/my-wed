@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
       // Store the URL the user was trying to access when receiving the 404.
-      var redirect = sessionStorage.redirect;
-      if (!redirect) {
-        sessionStorage.redirect = location.href;
-      }
+      sessionStorage.redirect = location.href;
       
       alert('404-' + location.href)
     </script>
